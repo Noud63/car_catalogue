@@ -1,8 +1,12 @@
 "use client"
 import Image from 'next/image';
 import { CustomButtonProps } from '@/types'
+import { useRef } from 'react';
 
 const CustomButton = ({ title, containerStyles, handleClick, btnType, textStyles, rightIcon} : CustomButtonProps) => {
+
+  const btnRef = useRef(null)
+
   return (
     <button
       disabled={false}

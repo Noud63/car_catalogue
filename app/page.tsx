@@ -2,6 +2,7 @@ import { Hero, SearchBar, CustomFilter, CarCard } from "@/components";
 import { fetchCars } from "@/utils";
 import { fuels, yearsOfProduction } from "@/constants"
 import ShowMore from "@/components/ShowMore";
+import TheseToo from "@/components/TheseToo";
 
 export default async function Home({searchParams}:{searchParams:any}) {
 
@@ -21,7 +22,9 @@ export default async function Home({searchParams}:{searchParams:any}) {
       
       <Hero />
 
-      <div className="padding-x max-width mt-24 max-md:mt-16" id="discover">
+      <TheseToo/>
+
+      <div className="padding-x max-width mt-28 max-md:mt-16" id="discover">
         <div className="home__text-container">
           <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
           <p>Explore the cars you might like</p>

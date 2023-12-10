@@ -8,6 +8,8 @@ const Hero = () => {
 
   const router = useRouter()
 
+   const ref = React.useRef("" as string);
+
   const handleScroll = () => {
        router.push("/#discover")
   };
@@ -22,15 +24,22 @@ const Hero = () => {
         </h1>
 
         <p className="hero__subtitle border-y border-orange-800 py-2">
-          Experience car rental like you never did before,
-          Effortless and quick!
+          Experience car rental like you never did before, Effortless and quick!
         </p>
 
-        <CustomButton
-          title="Explore Cars"
-          containerStyles="bg-orange-700 text-white rounded-full mt-12 shadow-md"
-          handleClick={handleScroll}
-        />
+        <div className="flex flex-row mt-12">
+          <CustomButton
+            title="Explore Cars"
+            containerStyles="bg-orange-700 text-white rounded-full shadow-md mr-2"
+            handleClick={handleScroll}
+          />
+
+          <CustomButton
+            title="Contact"
+            containerStyles="bg-orange-700 text-white rounded-full shadow-md w-[140px]"
+            handleClick={handleScroll}
+          />
+        </div>
       </div>
 
       <div className="hero__image-container">

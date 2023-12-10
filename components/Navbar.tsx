@@ -23,11 +23,11 @@ const Navbar = () => {
           className="flex justify-center items-center pt-2 max-sm:pt-0"
         >
           <Image
-            src="/logo.svg"
+            src="/companylogo.png"
             alt="logo"
-            width={138}
+            width={238}
             height={18}
-            className="object-contain h-auto w-[140px]"
+            className="object-contain h-auto w-[200px]"
           />
         </Link>
 
