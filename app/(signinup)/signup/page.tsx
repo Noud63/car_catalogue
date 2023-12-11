@@ -69,9 +69,9 @@ const Signup = () => {
   };
 
   return (
-    <div className="w-full m-auto max-w-[450px] min-h-screen flex justify-start items-center flex-col pt-52 px-4">
-      <span className="flex justify-center border-b-2 w-[95%] border-lime-800 text-xl font-semibold pb-2 mb-6">
-        Signup
+    <div className="w-full m-auto max-w-[450px] min-h-screen flex justify-start items-center flex-col pt-44 px-4">
+      <span className="flex justify-center border-b-2 w-[95%] border-amber-800 text-2xl text-amber-800 font-semibold pb-2 mb-6">
+        Register
       </span>
       <form
         onSubmit={registerUser}
@@ -83,7 +83,7 @@ const Signup = () => {
           </label>
           <input
             type="text"
-            className="w-4/5 border border-lime-800 outline-none p-1 bg-white shadow-sm text-sm max-xsm:w-full ml-2"
+            className="w-4/5 border border-amber-800 outline-none p-1 bg-white shadow-sm text-sm max-xsm:w-full ml-2"
             name="fullName"
             value={formData.fullName}
             onChange={handleInputChange}
@@ -97,7 +97,7 @@ const Signup = () => {
           </label>
           <input
             type="text"
-            className="w-4/5 border border-lime-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
+            className="w-4/5 border border-amber-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
             name="userName"
             value={formData.userName}
             onChange={handleInputChange}
@@ -111,7 +111,7 @@ const Signup = () => {
           </label>
           <input
             type="text"
-            className="w-4/5 border border-lime-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
+            className="w-4/5 border border-amber-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
             name="address"
             value={formData.address}
             onChange={handleInputChange}
@@ -125,7 +125,7 @@ const Signup = () => {
           </label>
           <input
             type="text"
-            className="w-4/5 border border-lime-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
+            className="w-4/5 border border-amber-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
             name="city"
             value={formData.city}
             onChange={handleInputChange}
@@ -139,7 +139,7 @@ const Signup = () => {
           </label>
           <input
             type="text"
-            className="w-4/5 border border-lime-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
+            className="w-4/5 border border-amber-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
             name="phone"
             value={formData.phone}
             onChange={handleInputChange}
@@ -153,7 +153,7 @@ const Signup = () => {
           </label>
           <input
             type="email"
-            className="w-4/5 border border-lime-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
+            className="w-4/5 border border-amber-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
@@ -167,7 +167,7 @@ const Signup = () => {
           </label>
           <input
             type="text"
-            className="w-4/5 border border-lime-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
+            className="w-4/5 border border-amber-800 outline-none p-1 shadow-sm text-sm max-xsm:w-full ml-2"
             name="password"
             value={formData.password}
             onChange={handleInputChange}
@@ -178,7 +178,7 @@ const Signup = () => {
         <button
           type="submit"
           className="w-full py-3 rounded-full bg-[#9ebaa2] 
-          bg-gradient-to-r from-[#9ebaa2] to-black text-white text-[14px] 
+          bg-gradient-to-r from-amber-800 via-amber-950 to-black text-white text-[14px] 
           leading-[17px] font-bold"
         >
           {sending ? "Sending..." : success ? "sent successfully" : "Submit"}

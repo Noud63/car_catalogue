@@ -19,15 +19,15 @@ const ShowMore = ({pageNumber, isNext}: ShowMoreProps ) => {
   return (
     <div className="w-full flex-center gap-5 mt-10">
       {!isNext && (
-        <CustomButton 
-        title="Show More"
-        btnType="button"
-        containerStyles="bg-primary-blue rounded-full text-white"
-        handleClick={handleNavigation}
+        <CustomButton
+          title="Show More"
+          btnType="button"
+          containerStyles="bg-gradient-to-r from-amber-800 via-amber-950 to-black rounded-full text-white"
+          handleClick={handleNavigation}
         />
       )}
     </div>
-  )
+  );
 }
 
 export default ShowMore

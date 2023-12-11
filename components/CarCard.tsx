@@ -86,7 +86,7 @@ const CarCard = ({ car }: CarCardProps) => {
         <div className="car-card__btn-container hidden group-hover:flex transition duration-1000">
           <CustomButton
             title="View More"
-            containerStyles="w-full py-16 rounded-full bg-[#9ebaa2] bg-gradient-to-r from-[#9ebaa2] to-black"
+            containerStyles="w-full py-16 rounded-full bg-[#9ebaa2] bg-gradient-to-r from-amber-700 to-black"
             textStyles="text-white text-[14px] leading-[17px] font-bold"
             rightIcon="/right-arrow.svg"
             handleClick={() => setIsOpen(true)}
@@ -99,9 +99,9 @@ const CarCard = ({ car }: CarCardProps) => {
         className="w-full"
       >
         <button
-          className="w-full flex justify-center items-center h-10 
-                   bg-gradient-to-r from-[#9ebaa2] to-black text-white 
-                   leading-10 cursor-pointer"
+          className="text-[14px] leading-[26px] font-semibold capitalize w-full flex justify-center items-center h-10 
+                   bg-gradient-to-r from-amber-800 via-amber-950 to-black text-white 
+                   cursor-pointer"
         >
           Book now!
         </button>

@@ -16,7 +16,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full max-w-full absolute z-10 top-20 m-auto right-0 left-0">
+    <header className="w-full max-w-full absolute z-10 top-12 m-auto right-0 left-0">
       <nav className="flex justify-between items-center py-4 bg-transparent px-16 max-sm:px-4">
         <Link
           href="/"
@@ -25,9 +25,9 @@ const Navbar = () => {
           <Image
             src="/companylogo.png"
             alt="logo"
-            width={238}
+            width={338}
             height={18}
-            className="object-contain h-auto w-[200px]"
+            className="object-contain h-auto w-[300px] max-sm:w-[250px]"
           />
         </Link>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
           alt="carlogos"
           width={600}
           height={10}
-          className="object-contain mt-2 ml-12 mr-12 max-xl:hidden w-auto h-[24px]"
+          className="object-contain mt-2 ml-12 mr-12 max-xl:hidden w-auto h-[32px]"
         />
 
         <div
@@ -47,8 +47,8 @@ const Navbar = () => {
           {!session ? (
             <Link
               href="/api/auth/signin?callbackUrl=/"
-              className="text-[#9ebaa2] text-md rounded-full flex justify-center items-center 
-            bg-black min-w-[100px] h-9 shadow-md max-sm:w-[80px] 
+              className="text-white text-md rounded-full flex justify-center items-center 
+            bg-gradient-to-r from-amber-800 via-amber-950 to-black min-w-[100px] h-9 shadow-md max-sm:w-[80px] 
             max-sm:text-sm max-sm:h-8"
             >
               Login
@@ -56,8 +56,8 @@ const Navbar = () => {
           ) : (
             <Link
               href="/api/auth/signout?callbackUrl=/"
-              className="text-[#9ebaa2] text-md rounded-full flex justify-center items-center 
-            bg-black min-w-[100px] h-9 shadow-md max-sm:w-[80px] 
+              className="text-white text-md rounded-full flex justify-center items-center 
+            bg-gradient-to-r from-amber-800 via-amber-950 to-black min-w-[100px] h-9 shadow-md max-sm:w-[80px] 
             max-sm:text-sm max-sm:h-8"
             >
               Logout
@@ -66,10 +66,10 @@ const Navbar = () => {
 
           <Link href="/signup">
             <CustomButton
-              title="sign up"
+              title="signup"
               btnType="button"
-              containerStyles="text-[#5672d8] text-md rounded-full 
-            bg-black min-w-[100px] h-9 shadow-md max-sm:hidden
+              containerStyles="text-white text-md rounded-full 
+            bg-gradient-to-r from-amber-800 via-amber-950 to-black min-w-[100px] h-9 shadow-md max-sm:hidden
             max-sm:text-sm max-sm:h-8 text-[#9ebaa2]"
             />
           </Link>

@@ -16,27 +16,28 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <div className="flex-1 pt-40 padding-x">
+      <div className="flex-1 pt-24 padding-x">
         <h1 className="hero__title pr-8">
           Car rental
           <br /> service —<br /> best quality, <br />
           lowest price!
         </h1>
 
-        <p className="hero__subtitle border-y border-orange-800 py-2">
-          Experience car rental like you never did before, Effortless and quick!
+        <p className="hero__subtitle border-y border-amber-800 py-2">
+          Experience car rental like you never did before, <br />
+          Effortless and quick!
         </p>
 
         <div className="flex flex-row mt-12">
           <CustomButton
             title="Explore Cars"
-            containerStyles="bg-orange-700 text-white rounded-full shadow-md mr-2"
+            containerStyles="bg-gradient-to-r from-amber-800 via-amber-950 to-black text-white rounded-full shadow-md mr-2"
             handleClick={handleScroll}
           />
 
           <CustomButton
             title="Contact"
-            containerStyles="bg-orange-700 text-white rounded-full shadow-md w-[140px]"
+            containerStyles=" bg-gradient-to-r from-amber-800 via-amber-950 to-black text-white rounded-full shadow-md w-[140px]"
             handleClick={handleScroll}
           />
         </div>
