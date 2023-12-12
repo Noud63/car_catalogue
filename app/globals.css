@@ -158,7 +158,7 @@ body {
 
 /* START: Car Details styles */
 .car-details__dialog-panel {
-  @apply relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5 scrollbar-hide;
+  @apply relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5;
 }
 
 .car-details__close-btn {
@@ -242,7 +242,7 @@ body {
 }
 
 
-.scrollbar-hide::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
 }
 

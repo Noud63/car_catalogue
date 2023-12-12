@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <div className="flex-1 pt-24 padding-x">
+      <div className="flex-1 pt-32YY padding-x">
         <h1 className="hero__title">
           Car rental
           <br /> service —<br /> best quality, <br />
