@@ -34,9 +34,9 @@ const Navbar = () => {
         <Image
           src="/carlogos.png"
           alt="carlogos"
-          width={600}
+          width={400}
           height={10}
-          className="object-contain mt-2 ml-12 mr-12 max-xl:hidden w-auto h-[32px]"
+          className="object-contain mt-2 ml-12 mr-12 max-xl:hidden w-auto h-[22px]"
         />
 
         <div
@@ -47,7 +47,7 @@ const Navbar = () => {
           {!session ? (
             <Link
               href="/api/auth/signin?callbackUrl=/"
-              className="text-white text-md rounded-full flex justify-center items-center 
+              className="text-amber-500 text-sm rounded-full flex justify-center items-center hover:text-white transition duration-500
             bg-gradient-to-r from-amber-800 via-amber-950 to-black min-w-[100px] h-9 shadow-md max-sm:w-[80px] 
             max-sm:text-sm max-sm:h-8"
             >
@@ -56,7 +56,7 @@ const Navbar = () => {
           ) : (
             <Link
               href="/api/auth/signout?callbackUrl=/"
-              className="text-white text-md rounded-full flex justify-center items-center 
+              className="text-white text-sm rounded-full flex justify-center items-center 
             bg-gradient-to-r from-amber-800 via-amber-950 to-black min-w-[100px] h-9 shadow-md max-sm:w-[80px] 
             max-sm:text-sm max-sm:h-8"
             >
@@ -68,7 +68,7 @@ const Navbar = () => {
             <CustomButton
               title="signup"
               btnType="button"
-              containerStyles="text-white text-md rounded-full 
+              containerStyles="text-amber-500 text-sm rounded-full 
             bg-gradient-to-r from-amber-800 via-amber-950 to-black min-w-[100px] h-9 shadow-md max-sm:hidden
             max-sm:text-sm max-sm:h-8 text-[#9ebaa2]"
             />

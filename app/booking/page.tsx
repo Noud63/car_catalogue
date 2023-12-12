@@ -49,7 +49,7 @@ const BookingDetails = () => {
               {`${car.model?.charAt(0).toUpperCase()}${car.model?.slice(1)}`}
             </span>
           </div>
-          <span className="flex justify-center rounded-full text-white w-[150px] h-[45px] items-center text-xl bg-gradient-to-r from-[#9ebaa2] to-black shadow-lg">
+          <span className="flex justify-center rounded-full text-white w-[150px] h-[45px] items-center text-xl  bg-gradient-to-r from-amber-800 via-amber-950 to-black shadow-lg">
             ${car.rent},- <span className="text-sm pl-1 pt-1">p/d</span>
           </span>
         </div>

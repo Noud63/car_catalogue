@@ -60,7 +60,7 @@ body {
 }
 
 .hero__subtitle {
-  @apply text-[21px] text-amber-800 font-semibold mt-5;
+  @apply text-[21px] text-amber-800 font-semibold mt-4;
 }
 
 .hero__image-container {
@@ -68,11 +68,11 @@ body {
 }
 
 .hero__image {
-  @apply relative xl:w-full w-[95%] xl:h-[400px] max-xl:h-[390px] max-md:h-[200px] max-md:mt-12 mt-20 z-0 max-xsm:w-[320px] max-xsm:justify-center;
+  @apply relative xl:w-full w-[95%] xl:h-[400px] max-xl:h-[390px] max-md:h-[200px] max-md:mt-12 mt-48 z-0 max-xsm:w-[320px] max-xsm:justify-center;
 }
 
 .hero__image-overlay {
-  @apply absolute xl:-top-64 -right-[300px] bg-hero-bg bg-no-repeat -z-10 w-[1404px] h-[1000px] max-xl:hidden;
+  @apply absolute xl:-top-36 right-16 bg-hero-bg bg-no-repeat -z-10 w-[1113px] h-[999px] max-xl:hidden;
 }
 
 /* .hero__image-overlay2 {
@@ -112,11 +112,11 @@ body {
 
 /* START: Car Card styles */
 .car-card {
-  @apply flex flex-col justify-center items-start text-black-100 bg-transparent hover:bg-white transition duration-500 rounded-t-xl carcardShadow;
+  @apply flex flex-col justify-center items-start text-black-100  hover:bg-white transition duration-500 rounded-t-xl carcardShadow;
 }
 
 .car-card__content {
-  @apply w-full flex justify-between items-start gap-2 rounded-t-xl bg-gradient-to-r from-amber-800 to-black text-gray-100 p-3;
+  @apply w-full flex justify-between items-start gap-2 rounded-t-xl bg-white text-white p-3;
 }
 
 .car-card__content-title {
@@ -152,7 +152,7 @@ body {
 }
 
 .car-card__btn-container {
-  @apply absolute bottom-4 left-0 right-0 w-full z-10 px-2;
+  @apply absolute bottom-2 left-0 right-0 w-full z-10 px-2;
 }
 /* END: Car Card styles */
 
@@ -206,7 +206,7 @@ body {
 }
 
 .footer__copyrights-link {
-  @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
+  @apply  flex justify-center gap-10;
 }
 /* END: Footer styles */
 
@@ -247,18 +247,18 @@ body {
 }
 
 /* width */
-body::-webkit-scrollbar{
+/* body::-webkit-scrollbar{
   width: 10px;
-}
+} */
 
 /* Track */
-body::-webkit-scrollbar-track {
+/* body::-webkit-scrollbar-track {
   background: #fff;
-}
+} */
 
 /* Handle */
-body::-webkit-scrollbar-thumb {
+/* body::-webkit-scrollbar-thumb {
   background: #9a3412;
   border-radius: 5px;
   box-shadow: inset 0 0 5px black;
-}
+} */

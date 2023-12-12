@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image"
 
+
 const InfoBarTop = () => {
   return (
     <div className="w-full bg-gradient-to-r from-amber-700 to-black h-[50px] flex justify-between items-center max-sm:justify-end max-lg:pr-16 max-sm:pr-4">

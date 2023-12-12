@@ -9,7 +9,7 @@ const dance = localFont({
 
 const EnjoyTheRide = () => {
   return (
-    <div className="w-full max-w-full flex flex-row absolute justify-center m-auto top-8 right-0 left-0 px-4 z-10">
+    <div className="w-full max-w-full flex flex-row absolute justify-center m-auto top-0 right-0 left-0 px-0 z-10">
       <Image
         src="/car_wheelgreen.png"
         alt="car wheel"
@@ -20,7 +20,7 @@ const EnjoyTheRide = () => {
       <span
         className={`${dance.className} w-full text-white text-xl py-2
             flex items-center justify-center font-semibold tracking-widest 
-           rounded-full max-xsm:text-sm max-xsm:w-full bg-gradient-to-r from-[#9ebaa2] to-black shadow-lg`}
+           rounded-full max-xsm:text-sm max-xsm:w-full bg-gradient-to-r from-amber-700 to-black shadow-lg`}
       >
         Life's a journey, enjoy your ride
       </span>

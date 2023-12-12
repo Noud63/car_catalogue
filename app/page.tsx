@@ -3,6 +3,7 @@ import { fetchCars } from "@/utils";
 import { fuels, yearsOfProduction } from "@/constants"
 import ShowMore from "@/components/ShowMore";
 import TheseToo from "@/components/TheseToo";
+import HeroButtons from "@/components/HeroButtons";
 
 export default async function Home({searchParams}:{searchParams:any}) {
 
@@ -21,6 +22,8 @@ export default async function Home({searchParams}:{searchParams:any}) {
     <main className="overflow-hidden">
       
       <Hero />
+
+      <HeroButtons />
 
       <TheseToo/>
 
