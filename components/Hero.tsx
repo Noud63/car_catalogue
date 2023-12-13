@@ -1,22 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import CustomButton from "./CustomButton";
-import { useRouter } from "next/navigation"; 
 
 const Hero = () => {
 
-  const router = useRouter()
-
-   const ref = React.useRef("" as string);
-
-  const handleScroll = () => {
-       router.push("/#discover")
-  };
-
   return (
     <div className="hero">
-      <div className="flex-1 pt-32YY padding-x">
+      <div className="flex-1 pt-40 padding-x">
         <h1 className="hero__title">
           Car rental
           <br /> service —<br /> best quality, <br />
@@ -39,9 +29,8 @@ const Hero = () => {
             className="object-contain"
           />
         </div>
+        <div className="hero__image-overlay" />
       </div>
-
-      <div className="hero__image-overlay" />
     </div>
   );
 };

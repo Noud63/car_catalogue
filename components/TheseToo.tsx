@@ -3,17 +3,20 @@ import Image from "next/image";
 
 const TheseToo = () => {
   return (
-    <div className="thesetoo m-auto w-full flex justify-start flex-col px-16 mt-20 max-xsm:px-4">
-      <Image
-        src="/companylogoextra.png"
-        alt="logo"
-        width={338}
-        height={18}
-        className="object-contain h-auto w-[300px] mb-8"
-      />
+    <div className="thesetoo m-auto w-full flex flex-col px-16 mt-20 max-xsm:px-4">
+      <div className="w-full flex justify-center border-b-2 border-amber-800 mb-4">
+        <Image
+          src="/companylogoextra.png"
+          alt="logo"
+          width={338}
+          height={18}
+          className="object-contain w-[300px] pb-2"
+        />
+      </div>
+
       <div
         className="w-full flex flex-row justify-between text-lg rounded-t-2xl 
-           shadow-lg max-xl:flex-col max-xl:items-center max-xl:pb-0 border-x border-gray-300"
+           max-xl:flex-col max-xl:items-center border-b-2 border-amber-800 pb-5"
       >
         <div
           className="w-full max-w-1/3 flex flex-col border-dotted border-r border-gray-300 

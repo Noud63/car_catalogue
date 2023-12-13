@@ -52,7 +52,7 @@ body {
 
 /* START: Hero styles */
 .hero {
-  @apply flex xl:flex-row flex-col relative w-full max-w-full mx-auto ;
+  @apply flex xl:flex-row flex-col relative w-full max-w-full mx-auto;
 }
 
 .hero__title {
@@ -68,16 +68,13 @@ body {
 }
 
 .hero__image {
-  @apply relative xl:w-full w-[95%] xl:h-[400px] max-xl:h-[390px] max-md:h-[200px] max-md:mt-12 mt-48 z-0 max-xsm:w-[320px] max-xsm:justify-center;
+  @apply relative xl:w-full w-[95%] xl:h-[400px] max-xl:h-[390px] max-md:h-[200px] max-md:mt-12 mt-56 max-xl:mt-8 max-xsm:w-[320px] max-xsm:justify-center;
 }
 
 .hero__image-overlay {
   @apply absolute xl:-top-36 right-16 bg-hero-bg bg-no-repeat -z-10 w-[1113px] h-[999px] max-xl:hidden;
 }
 
-/* .hero__image-overlay2 {
-  @apply absolute xl:-top-20 -left-[95%] bg-hero-bg bg-repeat-round -z-10 w-full h-screen max-xl:hidden;
-} */
 /* END: Hero styles */
 
 /* START: Home styles */

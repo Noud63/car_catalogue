@@ -16,7 +16,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full max-w-full absolute z-10 top-12 m-auto right-0 left-0">
+    <header className="w-full max-w-full absolute z-10 top-12 m-auto right-0 left-0 bg-white carcardShadow">
       <nav className="flex justify-between items-center py-4 bg-transparent px-16 max-sm:px-4">
         <Link
           href="/"
@@ -36,7 +36,7 @@ const Navbar = () => {
           alt="carlogos"
           width={400}
           height={10}
-          className="object-contain mt-2 ml-12 mr-12 max-xl:hidden w-auto h-[22px]"
+          className="object-contain mt-1 ml-12 mr-12 max-xl:hidden w-auto h-[26px]"
         />
 
         <div
