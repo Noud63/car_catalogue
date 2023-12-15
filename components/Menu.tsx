@@ -34,7 +34,7 @@ const Menu = ({ isOpen, closeMenu }: menuProps) => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black/25" />
+            <div className="fixed inset-0 bg-black/50" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -49,13 +49,13 @@ const Menu = ({ isOpen, closeMenu }: menuProps) => {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel
-                  className="w-full max-w-[400px] transform overflow-hidden 
+                  className="w-full max-w-[400px] transform overflow-hidden mt-28 
                  rounded-2xl shadow-lg transition-all pattern-dots pattern-blue-200 pattern-bg-white 
                  pattern-size-2 pattern-opacity-100 modalShadow"
                 >
                   <Dialog.Title
                     as="h3"
-                    className="flex justify-center items-center text-lg font-medium leading- text-center bg-gradient-to-r from-[#9ebaa2] to-black text-white h-20"
+                    className="flex justify-center items-center text-lg font-medium text-center text-white h-20 bg-gradient-to-r from-amber-700 to-black"
                   >
                     Sign In / Sign Up
                   </Dialog.Title>
@@ -63,26 +63,32 @@ const Menu = ({ isOpen, closeMenu }: menuProps) => {
                   <div className="flex flex-row w-full mt-8 z-[999]">
                     {!session ? (
                       <div className="w-1/2 flex justify-center">
-                        <Link href="/api/auth/signin?callbackUrl=/" className="outline-none">
+                        <Link
+                          href="/api/auth/signin?callbackUrl=/"
+                          className="outline-none"
+                        >
                           <CustomButton
                             title="sign in"
                             btnType="button"
-                            containerStyles="text-[#5672d8] text-md rounded-full 
-                            bg-black min-w-[101px] h-10 shadow-md max-sm:w-[80px] 
-                            max-sm:text-sm max-sm:h-8 text-white"
+                            containerStyles="text-white text-md rounded-full 
+                            min-w-[101px] h-10 shadow-md max-sm:w-[80px] 
+                            max-sm:text-sm max-sm:h-8 bg-gradient-to-r from-amber-700 to-black"
                             handleClick={closeMenu}
                           />
                         </Link>
                       </div>
                     ) : (
                       <div className="w-1/2 flex justify-center">
-                        <Link href="/api/auth/signout?callbackUrl=/" className="outline-none">
+                        <Link
+                          href="/api/auth/signout?callbackUrl=/"
+                          className="outline-none"
+                        >
                           <CustomButton
                             title="sign out"
                             btnType="button"
-                            containerStyles="text-[#5672d8] text-md rounded-full 
-                            bg-black min-w-[101px] h-10 shadow-md max-sm:w-[80px] 
-                            max-sm:text-sm max-sm:h-8 text-white"
+                            containerStyles="text-white text-md rounded-full 
+                            min-w-[101px] h-10 shadow-md max-sm:w-[80px] 
+                            max-sm:text-sm max-sm:h-8 bg-gradient-to-r from-amber-700 to-black"
                             handleClick={closeMenu}
                           />
                         </Link>
@@ -94,9 +100,9 @@ const Menu = ({ isOpen, closeMenu }: menuProps) => {
                         <CustomButton
                           title="sign up"
                           btnType="button"
-                          containerStyles="text-[#5672d8] text-md rounded-full 
-                            bg-black min-w-[101px] h-10 shadow-md max-sm:w-[80px]
-                            max-sm:text-sm max-sm:h-8 text-white"
+                          containerStyles="text-white text-md rounded-full 
+                            min-w-[101px] h-10 shadow-md max-sm:w-[80px]
+                            max-sm:text-sm max-sm:h-8 bg-gradient-to-r from-amber-700 to-black"
                           handleClick={closeMenu}
                         />
                       </Link>
