@@ -42,7 +42,7 @@ const CarDetails = ({ isOpen, car, closeModal }: CarDetailsProps) => {
               >
                 <Dialog.Panel
                   className="relative w-full max-w-lg max-h-[96vh] overflow-y-auto 
-                transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-2"
+                transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-2 mt-20"
                 >
                   <button
                     type="button"
@@ -59,7 +59,7 @@ const CarDetails = ({ isOpen, car, closeModal }: CarDetailsProps) => {
                   </button>
 
                   <div className="flex-1 flex flex-col gap-3">
-                    <div className="relative w-full h-40 bg-gradient-to-r from-[#9ebaa2] to-black bg-cover bg-center rounded-t-lg">
+                    <div className="relative w-full h-40 bg-gradient-to-r from-amber-800 via-amber-950 to-black bg-cover bg-center rounded-t-lg">
                       <Image
                         src={generateCarImageUrl(car)}
                         alt="car model"

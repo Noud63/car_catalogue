@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const TheseToo = () => {
   return (
-    <div className="thesetoo m-auto w-full flex flex-col px-16 mt-20 max-xsm:px-4">
+    <div className="thesetoo m-auto w-full flex flex-col px-16 mt-28 max-xsm:px-4">
       <div className="w-full flex justify-center border-b-2 border-amber-800 mb-4">
         <Image
           src="/companylogoextra.png"

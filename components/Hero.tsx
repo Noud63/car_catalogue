@@ -6,11 +6,18 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <div className="flex-1 pt-40 padding-x">
-        <h1 className="hero__title">
-          Car rental
-          <br /> service —<br /> best quality, <br />
-          lowest price!
+      <div className="flex-1 pt-64 padding-x max-xl:pt-40">
+        <h1 className="hero__title mb-8 max-sm:mb-4">
+          <div
+            className="absolute top-40 font-extrabold 2xl:text-[72px] text-[50px] 
+          bg-gradient-to-r from-black to-amber-700 text-transparent bg-clip-text 
+          max-xl:relative max-xl:top-0 sm:text-[64px] max-xsm:text-[34px]"
+          >
+            Car Rental Service
+          </div>
+          Best quality, <br />
+          lowest price,<br />
+          Excellent service!
         </h1>
 
         <p className="hero__subtitle py-1">

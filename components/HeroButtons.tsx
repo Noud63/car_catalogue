@@ -11,8 +11,8 @@ const HeroButtons = () => {
       router.push("/#discover");
     };
   return (
-    <div className="flex flex-row justify-between mt-8 px-16 max-xl:mt-12 max-md:text-sm max-xsm:px-4 w-full">
-      <div className="flex flex-row w-full max-xsm:justify-between">
+    <div className="flex flex-row justify-between px-16 max-xl:mt-12 max-md:text-sm max-xsm:px-4 w-full">
+      <div className="flex flex-row w-full max-md:justify-between">
         <CustomButton
           title="Explore Cars"
           containerStyles="bg-gradient-to-r from-amber-800 via-amber-950 to-black text-amber-500 rounded-full shadow-md mr-2"

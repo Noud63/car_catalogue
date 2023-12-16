@@ -56,11 +56,11 @@ body {
 }
 
 .hero__title {
-  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+@apply 2xl:text-[56px] max-sm:text-[32px] text-[40px] font-extrabold max-xsm:text-[24px];
 }
 
 .hero__subtitle {
-  @apply text-[21px] text-amber-800 font-semibold mt-4;
+  @apply text-[21px] text-amber-800 font-semibold max-sm:text-[16px];
 }
 
 .hero__image-container {
@@ -68,7 +68,7 @@ body {
 }
 
 .hero__image {
-  @apply relative xl:w-full w-[95%] xl:h-[400px] max-xl:h-[390px] max-md:h-[200px] max-md:mt-4 mt-[260px] max-xl:mt-8 max-xsm:w-[320px] max-xsm:justify-center;
+  @apply relative xl:w-full w-[95%] xl:h-[400px] max-xl:h-[390px] max-md:h-[200px] max-md:mt-4 mt-[250px] max-xl:mt-8 max-xsm:w-[320px] max-xsm:justify-center;
 }
 
 .hero__image-overlay {
