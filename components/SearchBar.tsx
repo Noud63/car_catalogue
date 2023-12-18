@@ -57,7 +57,7 @@ const SearchBar = () => {
 
   return (
     <form
-      className="searchbar rounded-full sm:shadow-md bg-white max-sm:bg-transparent"
+      className="searchbar"
       onSubmit={handleSearch}
     >
       <div className="searchbar__item">

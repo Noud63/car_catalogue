@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="hero__image-container">
         <div className="hero__image">
           <Image
-            src="/jaguar.png"
+            src="/bentley2.png"
             alt="hero"
             fill
             sizes="100%"

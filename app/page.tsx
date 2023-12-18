@@ -20,16 +20,17 @@ export default async function Home({searchParams}:{searchParams:any}) {
 
   return (
     <main className="overflow-hidden">
-      
       <Hero />
 
       <HeroButtons />
 
-      <TheseToo/>
+      <TheseToo />
 
       <div className="padding-x max-width mt-28 max-md:mt-16" id="discover">
         <div className="home__text-container">
-          <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
+          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-black to-amber-700 text-transparent bg-clip-text py-1">
+            Car Catalogue
+          </h1>
           <p>Explore the cars you might like</p>
         </div>
         <div className="home__filters">

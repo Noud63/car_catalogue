@@ -16,7 +16,7 @@ const filteredManufacturers = (query === "") ? [] : manufacturers.filter((item) 
 ))
 
   return (
-    <div className="search-manufacturer">
+    <div className="search-manufacturer bg-white rounded-2xl shadow-md">
       <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className="relative w-full">
           <Combobox.Button className="absolute top-[14px]">
@@ -56,7 +56,7 @@ const filteredManufacturers = (query === "") ? [] : manufacturers.filter((item) 
                     key={item}
                     className={({ active }) =>
                       `relative search-manufacturer__option ${
-                        active ? "bg-primary-blue text-white" : "text-gray-900"
+                        active ? "bg-amber-700 text-white" : "text-gray-900"
                       }`
                     }
                     value={item}
