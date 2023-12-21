@@ -18,9 +18,11 @@ export default async function Home({ searchParams }: { searchParams: any }) {
 
   return (
     <main className="overflow-hidden">
-    
+
       <Hero />
+
       <HeroButtons />
+      
       <TheseToo />
 
       <div className="padding-x max-width mt-28 max-md:mt-16" id="discover">
