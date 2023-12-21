@@ -18,7 +18,7 @@ const HeroButtons = () => {
     };
     
   return (
-    <div className="flex flex-row justify-between px-16 max-xl:mt-12 max-md:text-sm max-xsm:px-4 w-full mt-8 max-2xl:mt-0 max-sm:px-8">
+    <div className="flex flex-row justify-between px-16 max-xl:mt-12 max-md:text-sm max-xsm:px-4 w-full mt-2 max-2xl:mt-0 max-sm:px-8">
       <div className="flex flex-row w-full max-md:justify-between">
         <CustomButton
           title="Explore Cars"
@@ -33,21 +33,6 @@ const HeroButtons = () => {
         />
       </div>
 
-      {/* <div className="w-[20px] h-[20px] bg-gradient-to-r from-amber-800 via-amber-950 to-black rounded-full border border-red-800">
-        
-      </div>
-
-      <div className="w-[20px] h-[20px] bg-gradient-to-r from-amber-800 via-amber-950 to-black rounded-full">
-        
-      </div>
-
-      <div className="w-[20px] h-[20px] bg-gradient-to-r from-amber-800 via-amber-950 to-black rounded-full border border-red-800">
-        
-      </div>
-
-      <div className="w-[20px] h-[20px] bg-gradient-to-r from-amber-800 via-amber-950 to-black rounded-full">
-        
-      </div> */}
     </div>
   );
 }

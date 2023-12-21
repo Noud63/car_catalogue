@@ -1,21 +1,19 @@
 import { Hero, SearchBar, CustomFilter, CarCard } from "@/components";
 import { fetchCars } from "@/utils";
-import { fuels, yearsOfProduction } from "@/constants"
+import { fuels, yearsOfProduction } from "@/constants";
 import ShowMore from "@/components/ShowMore";
 import TheseToo from "@/components/TheseToo";
 import HeroButtons from "@/components/HeroButtons";
 
-export default async function Home({searchParams}:{searchParams:any}) {
-
+export default async function Home({ searchParams }: { searchParams: any }) {
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturer || "",
     year: searchParams.year || "2023",
     fuel: searchParams.fuel || "",
     limit: searchParams.limit || "10",
-    model: searchParams.model || ""
+    model: searchParams.model || "",
+  });
 
-  })
- 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
   return (
@@ -31,7 +29,7 @@ export default async function Home({searchParams}:{searchParams:any}) {
           <h1 className="text-4xl font-extrabold bg-gradient-to-r from-black to-amber-700 text-transparent bg-clip-text py-1">
             Car Catalogue
           </h1>
-          <p>Explore the cars you might like</p>
+          <p className="font-semibold">Explore the cars you might like</p>
         </div>
         <div className="home__filters">
           <SearchBar />

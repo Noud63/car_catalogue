@@ -27,7 +27,7 @@ const Navbar = () => {
             alt="logo"
             width={338}
             height={18}
-            className="object-contain h-auto w-[300px] max-sm:w-[250px]"
+            className="object-contain w-[300px] max-sm:w-[250px]"
           />
         </Link>
 

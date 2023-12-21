@@ -1,7 +1,7 @@
 "use client";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import { CustomButton } from ".";
+import CustomButton from "./CustomButton";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";

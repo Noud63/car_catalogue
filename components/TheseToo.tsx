@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const TheseToo = () => {
   return (
-    <div className="thesetoo m-auto w-full flex flex-col px-16 mt-28 max-xsm:px-4 max-sm:px-8 max-sm:mt-16">
+    <div className="thesetoo m-auto w-full flex flex-col px-16 mt-24 max-xsm:px-4 max-sm:px-8 max-sm:mt-16">
       <div className="w-full flex justify-center border-b-2 border-amber-800 mb-4">
         <Image
           src="/companylogoextra.png"
           alt="logo"
           width={338}
           height={18}
-          className="object-contain w-[300px] pb-2"
+          className="object-contain w-[338px] pb-2"
         />
       </div>
 
